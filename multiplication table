@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    for (int a = 1; a <= 12; a++)
+    {
+        for (int b = 1; b <= 12; b++){
+        cout.width(4); // sets output width as 4
+        if (b == 5)
+            {
+            continue; // skips 5th column then continues
+            }
+
+        cout << a * b;}
+        cout << endl;    // starts new row when b = 12 and repeats loop
+        if (a == 11)
+            {
+            break; /* stops loop when a is equal to 11 */
+                }
+    }
+}
